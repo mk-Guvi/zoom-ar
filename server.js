@@ -45,7 +45,7 @@ io.on("connection", (socket) => {
   });
 });
 //to tell that this socket joined the room we need to call it in script.js
-server.listen(process.env.PORT || 3031, () => {
+server.listen(process.env.PORT || 3030, () => {
   //process.env.PORT-this will work when you are in heroku server
-  console.log("server running at 3030 ");
+  console.log("server running at 4k ");
 });

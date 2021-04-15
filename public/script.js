@@ -2,8 +2,8 @@
 const socket = io("/");
 const videoGrid = document.getElementById("video-grid");
 const myVideo = document.createElement("video"); //creating vide html element whose type is video that plays the video
-
 myVideo.muted = true; //stopppping to replay
+myVideo.setAttribute("id", "innervideo");
 const peers = {}; //storing the new users
 
 var peer = new Peer(undefined, {
@@ -158,9 +158,7 @@ const setStopVideo = () => {
   `;
   document.querySelector(".main__video_button").innerHTML = html;
 };
-const leave = () => {
-  window.location = "https://google.com";
-};
+
 const setPlayVideo = () => {
   const html = `
   <i class="stop fas fa-video-slash"></i>
